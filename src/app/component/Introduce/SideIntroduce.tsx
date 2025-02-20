@@ -21,26 +21,25 @@ export default function SideIntroduce() {
 
     return (
         <div className="flex flex-col items-start">
-            <div className="mb-10">
+            <div className="md:mb-10 mb-5">
                 <p className="font-bold text-orange-500">Hi, I am</p>
                 <p
-                    className="text-4xl text-headingColor font-semibold relative cursor-pointer"
+                    className="text-2xl md:text-4xl text-headingColor font-semibold relative cursor-pointer"
                     onClick={handleClick}
                 >
                     {TextsShared.Name}
                     <span className="block w-full h-1 bg-orange-500 mt-5"></span>
-
                 </p>
             </div>
 
-            <div className="flex space-x-7">
+            <div className="flex space-x-5 md:space-x-7">
                 <div className="hover:opacity-50" onClick={handleOpenLinkedIn}>
                     <Image
                         src={ImageShared.LinkedIn}
                         width={25}
                         height={25}
                         alt="LinkedIn"
-                        className="hover:underline"
+                        className="w-[25px] md:w-[30px] h-auto object-cover hover:underline"
                     />
                 </div>
 
@@ -50,6 +49,7 @@ export default function SideIntroduce() {
                         width={25}
                         height={25}
                         alt="Github"
+                        className="w-[25px] md:w-[30px] h-auto object-cover"
                     />
                 </div>
 
@@ -59,7 +59,7 @@ export default function SideIntroduce() {
                         width={25}
                         height={25}
                         alt="Instagram"
-                        className="object-cover"
+                        className="w-[25px] md:w-[30px] h-auto object-cover"
                     />
                 </div>
             </div>

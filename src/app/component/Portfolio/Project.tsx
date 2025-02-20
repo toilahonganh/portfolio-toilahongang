@@ -25,7 +25,7 @@ export default function Blogs() {
   return (
     <section className="flex flex-col w-full items-center text-center">
       <div className="mt-8 w-full p-8 bg-white rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold mb-10 text-headingColor text-left">
+        <h2 className="text-xl md:text-2xl font-semibold mb-10 text-headingColor text-left">
           My Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

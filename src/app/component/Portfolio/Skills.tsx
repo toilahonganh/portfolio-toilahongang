@@ -81,13 +81,13 @@ export default function Skills() {
             degree: 'Major: Information Technology - Senior Student ',
             school: 'Thuy Loi University',
             year: '2021 - 2025',
-            GPA: 3.5
+            GPA: 3.7
         },
     ];
     return (
         <section className="flex flex-col w-full items-center text-center">
             <div className="mt-8 w-full p-8 bg-white rounded-lg shadow-lg">
-                <h2 className="text-2xl font-semibold mb-10 text-headingColor text-left">
+                <h2 className="text-xl md:text-2xl font-semibold mb-10 text-headingColor text-left">
                     Skills
                 </h2>
                 <ul className="space-y-10">
@@ -117,14 +117,14 @@ export default function Skills() {
 
 
             <div className="mt-8 w-full p-8 bg-white rounded-lg shadow-lg">
-                <h2 className="text-2xl font-semibold mb-10 text-headingColor text-left">
+                <h2 className="text-xl md:text-2xl font-semibold mb-10 text-headingColor text-left">
                     Education
                 </h2>
                 <ul className="space-y-10 text-left">
                     {education.map((edu, index) => (
                         <div
                             key={index}
-                            className="bg-white text-[16px] space-y-5">
+                            className="bg-white text-sm md:text-[16px] space-y-5">
                             <h3 className="text-gray-600">
                                 {edu.degree}
                             </h3>

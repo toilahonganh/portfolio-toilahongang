@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="bg-bannerBgColor">
       <Banner />
-      <div className="px-20">
+      <div className="md:px-20 px-5">
         <WhyHireMe />
         <Project />
         <Skills />

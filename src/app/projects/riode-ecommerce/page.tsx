@@ -30,8 +30,8 @@ export default function Riode() {
 
     return (
         <section className="flex flex-col items-center text-center p-8">
-            <h2 className="text-3xl font-bold mb-6 text-headingColor">Riode Ecommerce Website Overview</h2>
-            <p className="text-gray-600 mb-10 max-w-2xl text-base">
+            <h2 className="text-xl md:text-3xl font-bold mb-6 text-headingColor">Riode Ecommerce Website Overview</h2>
+            <p className="text-sm text-gray-600 mb-10 max-w-2xl md:text-base">
                 Riode is a modern and responsive eCommerce platform designed to enhance the shopping experience.
                 Below are some key pages and features of the website.
             </p>
@@ -50,7 +50,7 @@ export default function Riode() {
                             className="object-cover w-full h-60 rounded-t-lg"
                         />
                         <div className="p-4 bg-gray-100">
-                            <h3 className="text-base font-light text-headingColor">{image.name}</h3>
+                            <h3 className="text-xs md:text-base font-light text-headingColor">{image.name}</h3>
                         </div>
                     </div>
                 ))}

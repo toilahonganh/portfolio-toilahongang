@@ -4,13 +4,17 @@ import {ImageShared} from "@/app/component/shared";
 
 export default function HeroImage() {
     return (
-        <Image 
-            src={ImageShared.Avatar}
-            width={580}
-            height={580}
-            alt="Avatar"
-        />
-    )
+        <div className="flex justify-center">
+            <Image 
+                src={ImageShared.Avatar}
+                width={580}
+                height={580}
+                alt="Avatar"
+                className="w-[300px] md:w-[500px] h-auto"
+                sizes="(max-width: 640px) 300px, (max-width: 768px) 400px, (max-width: 1024px) 500px, 580px"
+            />
+        </div>
+    );
 }
 
 // "use client";
