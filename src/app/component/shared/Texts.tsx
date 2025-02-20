@@ -20,8 +20,8 @@ const Texts = {
     },
 
     Header: {
-        Blogs: "/blogs",
-        Projects: "/projects"
+        Blogs: "/",
+        Projects: "/"
     }
 
 }
