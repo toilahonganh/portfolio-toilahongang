@@ -129,22 +129,22 @@ export default function Skills() {
                         <div
                             key={index}
                             className="bg-white text-sm md:text-[16px] space-y-5">
-                            <h3 className="text-gray-600">
+                            <h3 className="text-sm text-headingColor">
                                 {edu.degree}
                             </h3>
-                            <p className="text-gray-600">
+                            <p className="text-sm text-headingColor">
                                 {edu.school}
                             </p>
-                            <p className="text-gray-500">
+                            <p className="text-sm text-headingColor">
                                 {edu.year}
                             </p>
-                            <p className="text-gray-500">
+                            <p className="text-sm text-headingColor">
                                 GPA: {edu.GPA}
                             </p>
-                            <p className="text-gray-500">Scientific Research Projects:</p>
-                            <ul className="list-disc list-inside text-gray-500 space-y-5">
+                            <p className="text-sm text-headingColor">Scientific Research Projects:</p>
+                            <ul className="list-disc list-inside text-headingColor space-y-5">
                                 {edu.scientific_research_projects.map((project, idx) => (
-                                    <li key={idx}>{project}</li>
+                                    <li key={idx} className="text-sm">{project}</li>
                                 ))}
                             </ul>
 
