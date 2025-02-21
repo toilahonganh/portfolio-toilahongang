@@ -78,12 +78,17 @@ import { SkillShared } from "@/app/component/shared";
 export default function Skills() {
     const education = [
         {
-            degree: 'Major: Information Technology - Senior Student ',
+            degree: 'Major: Information Technology - Senior Student',
             school: 'Thuy Loi University',
             year: '2021 - 2025',
-            GPA: 3.7
+            GPA: '3.7',
+            scientific_research_projects: [
+                'Identifying shrimp diseases with the YOLOv8 deep learning model',
+                'Building a 3D tourism system based on AI technology',
+            ],
         },
     ];
+    
     return (
         <section className="flex flex-col w-full items-center text-center">
             <div className="mt-8 w-full p-8 bg-white rounded-lg shadow-lg">
@@ -115,7 +120,6 @@ export default function Skills() {
                 </ul>
             </div>
 
-
             <div className="mt-8 w-full p-8 bg-white rounded-lg shadow-lg">
                 <h2 className="text-xl md:text-2xl font-semibold mb-10 text-headingColor text-left">
                     Education
@@ -137,6 +141,14 @@ export default function Skills() {
                             <p className="text-gray-500">
                                 GPA: {edu.GPA}
                             </p>
+                            <p className="text-gray-500">Scientific Research Projects:</p>
+                            <ul className="list-disc list-inside text-gray-500 space-y-5">
+                                {edu.scientific_research_projects.map((project, idx) => (
+                                    <li key={idx}>{project}</li>
+                                ))}
+                            </ul>
+
+
                         </div>
                     ))}
                 </ul>

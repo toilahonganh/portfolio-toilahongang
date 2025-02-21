@@ -29,7 +29,7 @@ export default function ImagePanorama({ images, text, address, interval = 3000 }
   });
 
   return (
-    <div {...handlers} className="relative w-full h-[400px] md:h-[500px] mt-14 cursor-pointer overflow-hidden select-none">
+    <div {...handlers} className="relative w-full h-[400px] md:h-[500px] cursor-pointer overflow-hidden select-none">
       {/* Ảnh Panorama */}
       <Image
         src={images[currentIndex]}

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Header() {
     return (
-        <header className="flex w-full h-16 items-center justify-between bg-bannerBgColor px-5 md:px-20 md:py-10">
+        <header className="flex w-full h-16 items-center justify-between bg-bannerBgColor px-5 md:px-[100px] md:py-10">
             {/* Logo bên trái ngoài cùng */}
             <div>
                 <Link href="/">
