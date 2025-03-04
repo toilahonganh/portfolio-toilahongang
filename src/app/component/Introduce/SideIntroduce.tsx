@@ -28,6 +28,7 @@ export default function SideIntroduce() {
                     onClick={handleClick}
                 >
                     {TextsShared.Name}
+                    <br />
                     <span className="block w-full h-1 bg-orange-500 mt-5"></span>
                 </p>
             </div>

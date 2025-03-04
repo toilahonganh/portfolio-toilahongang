@@ -81,7 +81,6 @@ export default function Skills() {
             degree: 'Major: Information Technology - Senior Student',
             school: 'Thuy Loi University',
             year: '2021 - 2025',
-            GPA: '3.7',
             scientific_research_projects: [
                 'Identifying shrimp diseases with the YOLOv8 deep learning model',
                 'Building a 3D tourism system based on AI technology',
@@ -137,9 +136,6 @@ export default function Skills() {
                             </p>
                             <p className="text-sm text-headingColor">
                                 {edu.year}
-                            </p>
-                            <p className="text-sm text-headingColor">
-                                GPA: {edu.GPA}
                             </p>
                             <p className="text-sm text-headingColor">Scientific Research Projects:</p>
                             <ul className="list-disc list-inside text-headingColor space-y-5">
